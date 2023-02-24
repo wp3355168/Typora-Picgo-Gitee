@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-02-24 22:14:13
+# 创建时间：2023-02-24 22:16:40
 # 使用模版：V2RaySE 默认模版
 # 节点数量：1
 ####################################
@@ -21,46 +21,46 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"defaultName","type":"vmess","server":"206.125.44.88","port":418048,"cipher":"auto","uuid":"206.125.44.88:443?host=www.42065245.xyz&path=/path/212719260802&tlsServerName=www.42065245.xyz","alterId":0,"tls":false,"skip-cert-verify":true}
+  - {"name":"517","type":"vmess","server":"206.125.44.88","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/212719260802","headers":{"host":"www.42065245.xyz"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - defaultName
+      - '517'
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - defaultName
+      - '517'
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - defaultName
+      - '517'
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - defaultName
+      - '517'
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - defaultName
+      - '517'
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - defaultName
+      - '517'
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -83,7 +83,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - defaultName
+      - '517'
 
 rules:
 # 本地/局域网地址
